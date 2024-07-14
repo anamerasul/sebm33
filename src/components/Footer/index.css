@@ -1,0 +1,10 @@
+.logo {
+    width: 50px;
+}
+
+.footer {
+    background-color: #1f1c26;
+    padding: 2rem;
+    min-height: 105px;
+    font-weight: bold;
+}

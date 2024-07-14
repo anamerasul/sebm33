@@ -1,0 +1,37 @@
+/* .cardsContainer>div:first-child {
+    margin-left: 20px;
+} */
+
+.card {
+    width: 365px;
+    height: 365px;
+    margin: 0 10px;
+}
+
+.title {
+    font-size: 40px;
+}
+
+.scrollButton {
+    margin-top: 1rem;
+}
+
+.rewardsWrapper {
+    top: 0;
+}
+
+
+@media screen and (min-width: 780px) {
+    .rewardsContainer {
+        /* margin-top: 10rem; */
+    }
+
+    .scrollButton {
+        margin-top: 4rem;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+}

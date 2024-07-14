@@ -1,0 +1,9 @@
+.container{
+    min-height: 400px;
+    border-top: 1px solid #f8526e;
+    border-bottom: 1px solid #f8526e;
+    transform: skewY(5deg);
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    background-color: #00000066;
+}

@@ -1,0 +1,30 @@
+.logo {
+    width: 50px;
+}
+
+.navbar .navbar-nav {
+    padding-right: 80px;
+}
+
+.navbar {
+    background-color: #1f1c26;
+    padding: 0;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    height: 60px;
+    font-weight: bold;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #f8526e
+}
+
+.nav-link.active {
+    border-bottom: 3px solid #f8526e;
+    color: #f8526e !important
+}

@@ -1,0 +1,9 @@
+.timerWrapper {
+    border: 1px solid #f8526e;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #f8526e;
+    padding: 0.5rem 2.5rem;
+    display: inline-block;
+    background-color: #262230;
+}

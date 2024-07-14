@@ -1,0 +1,131 @@
+.mouse {
+    border: 3px solid #f8526e;
+    width: 35px;
+    height: 60px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.innerDot {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+    background-color: #f8526e;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    animation-name: innerDotAnimate;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes innerDotAnimate {
+    0% {
+        top: 10%;
+    }
+
+    50% {
+        top: 70%;
+        opacity: 1;
+    }
+
+    100% {
+        top: 70%;
+        opacity: 0;
+    }
+}
+
+@keyframes bottomArrowOneAnimate {
+    0% {
+        bottom: -20px;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        bottom: -90px;
+        opacity: 0;
+    }
+}
+
+@keyframes bottomArrowTwoAnimate {
+    0% {
+        bottom: -30px;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        bottom: -120px;
+        opacity: 0;
+    }
+}
+
+@keyframes bottomArrowThreeAnimate {
+    0% {
+        bottom: -40px;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        bottom: -150px;
+        opacity: 0;
+    }
+}
+
+
+
+.bottomArrowOne::after,
+.bottomArrowOne::before {
+    animation-name: bottomArrowOneAnimate;
+    bottom: -20px;
+}
+
+.bottomArrowTwo::after,
+.bottomArrowTwo::before {
+    animation-name: bottomArrowTwoAnimate;
+    bottom: -30px
+}
+
+.bottomArrowThree::after,
+.bottomArrowThree::before {
+    animation-name: bottomArrowThreeAnimate;
+    bottom: -40px
+}
+
+.bottomArrowOne::after,
+.bottomArrowOne::before,
+.bottomArrowTwo::after,
+.bottomArrowTwo::before,
+.bottomArrowThree::after,
+.bottomArrowThree::before {
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.bottomArrow::after ,
+.bottomArrow::before {
+    border: 2px solid #f8526e;
+    content: '';
+    position: absolute;
+    width: 25px;
+}
+.bottomArrow::after {
+    transform: rotate(-45deg) translate(12%);
+    left: 25%;
+}
+
+.bottomArrow::before {
+    transform: rotate(45deg) translate(-12%);
+    right: 25%;
+}

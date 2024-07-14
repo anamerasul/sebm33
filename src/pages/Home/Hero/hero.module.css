@@ -1,0 +1,63 @@
+.title {
+    font-size: 50px;
+}
+
+.herobg {
+    background-color: #1f1c26;
+}
+.herobg *{
+    z-index: 1;
+}
+
+.building {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+
+.floatingIcon {
+    position: absolute;
+}
+
+.diamond {
+    width: 60px;
+    bottom: 40%;
+    left: 80%;
+    animation: floating 3.2s ease infinite;
+}
+
+.bell {
+    width: 60px;
+    bottom: 22%;
+    left: 60%;
+    animation: floating 2.8s ease infinite;
+}
+
+.seven {
+    width: 100px;
+    bottom: 35%;
+    left: 15%;
+    animation: floating 3s ease infinite;
+}
+
+.dice {
+    width: 60px;
+    bottom: 15%;
+    left: 40%;
+    animation: floating 3.6s ease infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-20px, 20px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+
+}
